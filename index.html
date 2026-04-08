@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block 943411 - Akademi Crypto Explorer</title>
+    <title>Block 943411 - BossX Premine Explorer</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +20,6 @@
             overflow-x: hidden;
         }
 
-        /* Background Effects */
         body::before {
             content: '';
             position: fixed;
@@ -48,34 +47,39 @@
             padding: 40px 0;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
 
         .logo-icon {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 24px;
+            font-weight: 900;
+            font-size: 20px;
             color: white;
+            letter-spacing: -1px;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
         }
 
         .logo-text {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 24px;
+            font-weight: 800;
             color: #ffffff;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
 
-        .logo-text span {
+        .logo-text .tagline {
             display: block;
-            font-size: 14px;
+            font-size: 13px;
             color: #a855f7;
             font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
 
         /* Block Card */
@@ -289,7 +293,6 @@
             animation: fadeIn 0.6s ease-out;
         }
 
-        /* Info icon */
         .info-icon {
             display: inline-flex;
             align-items: center;
@@ -306,12 +309,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header Logo -->
+        <!-- Header Logo - BossX Premine -->
         <div class="header">
-            <div class="logo-icon">A</div>
+            <div class="logo-icon">B</div>
             <div class="logo-text">
-                AKADEMI
-                <span>CRYPTO</span>
+                BossX
+                <span class="tagline">premine</span>
             </div>
         </div>
 
@@ -330,7 +333,6 @@
             </div>
 
             <div class="block-info">
-                <!-- Left Column -->
                 <div class="info-row">
                     <div class="info-label">Hash</div>
                     <div class="info-value">
@@ -367,7 +369,6 @@
                     </div>
                 </div>
 
-                <!-- Right Column -->
                 <div class="info-row">
                     <div class="info-label">Fee span</div>
                     <div class="info-value">0.11 - 476 <span style="color: #64748b; font-size: 13px;">sat/vB</span></div>
@@ -412,12 +413,11 @@
         <!-- Footer -->
         <div class="footer">
             <div>mempool.space</div>
-            <div class="footer-brand">Akademi Crypto Block Explorer</div>
+            <div class="footer-brand">BossX Premine Block Explorer</div>
         </div>
     </div>
 
     <script>
-        // Copy hash functionality
         document.querySelector('.copy-icon').addEventListener('click', function() {
             const hash = '000000...0d74bf0';
             navigator.clipboard.writeText(hash).then(() => {
@@ -428,30 +428,20 @@
             });
         });
 
-        // Navigation buttons
-        const prevBtn = document.querySelector('.nav-arrows button:first-child');
-        const nextBtn = document.querySelector('.nav-arrows button:last-child');
-        
-        prevBtn.addEventListener('click', () => {
+        document.querySelector('.nav-arrows button:first-child').addEventListener('click', () => {
             alert('Navigate to previous block: 943410');
         });
-        
-        nextBtn.addEventListener('click', () => {
+
+        document.querySelector('.nav-arrows button:last-child').addEventListener('click', () => {
             alert('Navigate to next block: 943412');
         });
 
-        // Close button
         document.querySelector('.close-btn').addEventListener('click', () => {
             document.querySelector('.block-card').style.opacity = '0';
             document.querySelector('.block-card').style.transform = 'scale(0.95)';
             setTimeout(() => {
                 location.reload();
             }, 300);
-        });
-
-        // Add smooth transition on load
-        window.addEventListener('load', () => {
-            document.querySelector('.block-card').style.transition = 'all 0.3s';
         });
     </script>
 </body>
