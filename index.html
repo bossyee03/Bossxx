@@ -34,17 +34,22 @@
         }
 
         .logo {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .logo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 50%;
         }
 
         .brand {
@@ -280,10 +285,10 @@
 
         @keyframes logoGlow {
             0%, 100% {
-                box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+                box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
             }
             50% {
-                box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+                box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
             }
         }
 
@@ -297,7 +302,8 @@
         <!-- Header -->
         <div class="header">
             <div class="logo">
-                <img src="bosx-logo.png" alt="BossX Logo">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAABOVBMVEX///8A//8B//8CAAAABgYGCQkJCgoKCwsMDAwNDQ0ODg4P
+Dw8QEBAQERE..." alt="BOSX Logo" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="brand">
                 <div class="brand-title">BossX</div>
@@ -322,12 +328,12 @@
 
             <div class="block-info">
                 <div class="info-item">
-                    <div class="info-label">Hash</div>
+                    <div class="info-label">HASH</div>
                     <div class="info-value highlight">000000...0d74bf0 📋</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Timestamp</div>
+                    <div class="info-label">TIMESTAMP</div>
                     <div class="info-value">
                         2026-04-03 04:02:41
                         <span class="timestamp-note">(5 days ago)</span>
@@ -335,44 +341,44 @@
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Size</div>
+                    <div class="info-label">SIZE</div>
                     <div class="info-value">2.09 MB</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Weight</div>
+                    <div class="info-label">WEIGHT</div>
                     <div class="info-value">3.98 MWU</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Health ℹ️</div>
+                    <div class="info-label">HEALTH <span style="color: #22d3ee; font-size: 12px;">ℹ</span></div>
                     <div class="health-badge">100%</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Fee mine</div>
+                    <div class="info-label">FEE MINE</div>
                     <div class="info-value">0.11 - 476 sat/vB</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Median fee</div>
+                    <div class="info-label">MEDIAN FEE</div>
                     <div class="info-value success">~0 sat/vB $0.00</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Total fees</div>
+                    <div class="info-label">TOTAL FEES</div>
                     <div class="info-value warning">0.014 BossX</div>
                     <div class="info-value success">$940.02</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Subsidy + fees</div>
+                    <div class="info-label">SUBSIDY + FEES</div>
                     <div class="info-value warning">3.139 BossX</div>
                     <div class="info-value success">$210,108.77</div>
                 </div>
 
                 <div class="info-item">
-                    <div class="info-label">Miner</div>
+                    <div class="info-label">MINER</div>
                     <div class="miner-info">
                         <div class="miner-icon"></div>
                         <div class="info-value">Asic</div>
